@@ -1,0 +1,11 @@
+name: ShutdownNotifier
+version: 0.1.0
+main: ShutdownNotifier
+description: An example plugin
+author: PaperMC
+website: https://wiki.theabyssmc.net
+api-version: 1.19
+commands:
+  shutdownNotify:
+    description: "Sends a server message and schedules a shutdown"
+    usage: "/shutdownNotify <delay> <message>"
