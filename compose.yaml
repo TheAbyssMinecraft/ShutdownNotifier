@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  local:
+    build:
+      context: .
+    ports:
+      - '25565:25565'
+    environment:
+      EULA: 'TRUE'
+      TYPE: 'PAPER'
+  manual:
+    image: itzg/minecraft-server:java17
+    volumes:
+      - './build/libs:/plugins'
+    ports:
+      - '25565:25565'
+    environment:
+      EULA: 'TRUE'
+      TYPE: 'PAPER'
